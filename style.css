@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(124, 143, 172);
+
+}
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(124, 143, 172);
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.vh-100{
+    height: 100vh;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.row>*{
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.body{
+    background-color: rgb(42, 52, 71);
+    height: 1000px;
+}
+.sidemenu{
+    width: 13%;
+    height: 100vh;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+.work{
+    width: 87%;
+    float: right; 
+}
+.header{
+    height: 75px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.language, .login, .setting{
+    width: 40px;
+    height: 40px;
+    background-color: #5d87ff;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language{
+    overflow: hidden;
+}
+.login img,.language img{
+    border-radius: 100%;
+}
+li > a{
+    color: rgb(124, 143, 172);
+    font-size: 16px;
+}
+.users{
+    background-color: transparent;
+    padding: 100px;
+    border-radius: 7px;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+}
+.users i{
+    color: white;
+}
+.login-menu{
+    right: 0%;
+    top: 100%;
+    background-color: rgb(42, 52, 71);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    display: none;
+    transition: all 1.5s;
+}
+.login-menu li{
+    padding: 10px 0;
+}
+.login-menu li a{
+    color: white;
+}
+.logout{
+    width: 100px;
+    background-color: salmon;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px;
+    background-color:transparent;
+    color: #5d87ff;
+    border: 1px solid #5d87ff;
+}
+.login:hover .login-menu{
+    display: block;   
+}
+.logo-img{
+    padding: 25px;
+    margin: 0 auto;
+    display: block;
+}
+.menu li{
+    padding: 15px;
+}
+.list li{
+    padding: 5px 25px 0px;
+}
+.list li a{
+    padding: 10px;
+    display: inline-block;
+    width: 160px;
+    border-radius: 7px;
+    color: rgb(124, 143, 172);
+}
+.list li .active{
+    background: rgb(93, 135, 255);
+    color: white;
+}
+
+
+
+/* login */
+.box{
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 100px;
+}
+input, select, option{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 300px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+} 
+option{
+    background-color: rgb(42, 52, 71);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+}
+label{
+    color: rgb(124, 143, 172);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 10px;
+    padding-left: 10px;
+}
+.forgot{
+    color: rgb(93, 135, 255);
+    font-weight: 600;
+    font-size: 14px;
+}
+.login-btn{
+    background-color:  rgba(255, 255, 255, .12);
+    color: white;
+    border: none;
+}
+.box h3{
+    font-size: 24px;
+    color: white;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+.box span{
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.welcome{
+    text-align: center;
+}
+.user-tbl table{
+    border: 1px solid white;
+    width: 100%;
+}
+.user-tbl tr{
+    border: 1px solid white;
+}
+.user-tbl td,.user-tbl th{
+    padding: 20px;
+}
+.user-tbl th{
+    color: white;
+}
